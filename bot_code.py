@@ -11,9 +11,9 @@ def get_text_messages(message: types.Message):
         bot.send_message(message.from_user.id, 'Привет')
 
         keyboard = types.ReplyKeyboardMarkup()
-        key_yes = types.KeyboardButton('Привет песик')
+        key_yes = types.KeyboardButton('Привет')
         keyboard.add(key_yes)
-        key_no = types.KeyboardButton('Иди в будку мудила вонючая')
+        key_no = types.KeyboardButton('Пока')
         keyboard.add(key_no)
         bot.send_message(message.from_user.id, text='asnwer', reply_markup=keyboard)
 
